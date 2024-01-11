@@ -1,0 +1,93 @@
+/* 
+  Style rules for the navigation container with the class .header__nav.
+  Utilizes flex display and sets overflow to 'hidden'.
+*/
+.header__nav {
+  display: flex;
+  overflow: hidden;
+}
+
+/* 
+  Styling for the logo container within the .header section.
+  Utilizes flex properties, absolute positioning, padding, and relative positioning.
+*/
+.header__logo {
+  flex: 1;
+  display: flex;
+  position: relative;
+  padding: 20px;
+}
+
+/* 
+  Styling for the logo overlay within the .header__logo.
+  Utilizes absolute positioning, covers the entire container, sets background color, and z-index.
+*/
+.header__logo-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  z-index: -1;
+}
+
+/* 
+  Styling for the heading within the .header__logo.
+  Adds padding, font properties, text color, and opacity.
+*/
+.header__logo h4 {
+  padding-left: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: var(--playfair-display);
+  color: #fff;
+  opacity: 0.8;
+}
+
+/* 
+  Styling for the menu elements within the .header__menu and .header__menu-mobile.
+  Utilizes flex properties, padding, font properties, text color, and cursor styling.
+*/
+.header__menu, .header__menu-mobile {
+  padding: 20px;
+  flex: 1.236;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 64px;
+  list-style: none;
+}
+
+/* 
+  Styling for list items within .header__menu.
+  Sets font properties, text color, font size, text transform, line height, and cursor styling.
+*/
+.header__menu li {
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  color: var(--secondary-color);
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+/* 
+  Styling for images within list items in .header__menu.
+  Sets width, height, and object-fit properties.
+*/
+.header__menu li img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* 
+  Styling for .header__menu-mobile.
+  Sets display to none, adds gap, and relative positioning.
+*/
+.header__menu-mobile {
+  display: none;
+  gap: 20px;
+  position: relative;
+}

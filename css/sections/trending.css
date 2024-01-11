@@ -1,0 +1,224 @@
+/* 
+  Style rules for the trending section.
+  Utilizes position, display, flex direction, overflow, and padding properties.
+*/
+.trending {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* 
+  Styling for the discover container within .trending.
+  Sets position, top, left, z-index, width, height, border radius, background color, cursor, display, justify content, align items properties.
+*/
+.trending__discover {
+  position: absolute;
+  top: 44%;
+  left: 44%;
+  z-index: 1;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+  Styling for the text within .trending__discover.
+  Sets font size, font weight, font family, text transform, text color properties.
+*/
+.trending__discover p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* 
+  Styling for the containers within .trending.
+  Sets width, min height, display, flex direction, and row properties.
+*/
+.trending-leo,
+.trending-leo {
+  width: 100%;
+  min-height: 640px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* 
+  Styling for the content container within .trending.
+  Sets flex, display, justify content, flex direction, and padding properties.
+*/
+.trending__content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 32px 64px;
+}
+
+/* 
+  Styling for the list container within .trending__content.
+  Sets list style, flex wrap, and gap properties.
+*/
+.trending__list {
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* 
+  Styling for the list items within .trending__list.
+  Sets flex, display, align items, flex direction, gap, min width properties.
+*/
+.trending__list li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+  min-width: 210px;
+}
+
+/* 
+  Styling for the icon within .trending__list.
+  Sets width, height, border radius, background color properties.
+*/
+.trending__icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+}
+
+/* 
+  Styling for the icon image within .trending__icon.
+  Sets width, height, object fit properties.
+*/
+.trending__icon img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+/* 
+  Styling for the text within .trending__list.
+  Sets flex, font size, font weight, font family, text color properties.
+*/
+.trending__list p {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  color: var(--secondary-color);
+}
+
+/* 
+  Styling for the image container within .trending__image.
+  Sets flex, position, padding, background color, background repeat, background size, and background position properties.
+*/
+.trending__image {
+  flex: 1;
+  position: relative;
+  padding: 32px 64px;
+  background-color: var(--color-white);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* 
+  Styling for the images within .trending__image.
+  Sets background image property.
+*/
+.trending-leo .trending__image {
+  background-image: url("../../assets/japanese2.png");
+}
+
+.trending-leo .trending__image {
+  background-image: url("../../assets/japanese1.png");
+}
+
+/* 
+  Styling for the image within .trending__image.
+  Sets width, height, object fit properties.
+*/
+.trending__image img {
+  width: 254px;
+  height: 260px;
+  object-fit: contain;
+}
+
+/* Arrows */
+
+/* 
+  Styling for the arrow containers within .trending__arrow.
+  Sets position and z-index properties.
+*/
+.trending__arrow {
+  position: absolute;
+  z-index: 1;
+}
+
+/* 
+  Styling for the arrow image within .trending__arrow.
+  Sets object fit property.
+*/
+.trending__arrow img {
+  object-fit: contain;
+}
+
+/* 
+  Styling for the left arrow container within .trending__arrow-left.
+  Sets left, top, and image width, height properties.
+*/
+.trending__arrow-left {
+  left: -2.5px;
+  top: 12%;
+}
+
+.trending__arrow-left img,
+.trending__arrow-top img {
+  width: auto;
+  height: 100%;
+}
+
+/* 
+  Styling for the top arrow container within .trending__arrow-top.
+  Sets top, left, and image width, height properties.
+*/
+.trending__arrow-top {
+  top: -10.5px;
+  left: 12%;
+}
+
+/* 
+  Styling for the bottom arrow container within .trending__arrow-bottom.
+  Sets bottom, right, and image width, height properties.
+*/
+.trending__arrow-bottom {
+  bottom: -6.5px;
+  right: 12%;
+}
+
+.trending__arrow-bottom img,
+.trending__arrow-right img {
+  width: 100%;
+  height: auto;
+}
+
+/* 
+  Styling for the right arrow container within .trending__arrow-right.
+  Sets right, bottom, and image width, height properties.
+*/
+.trending__arrow-right {
+  right: -2.5px;
+  bottom: 12%;
+}

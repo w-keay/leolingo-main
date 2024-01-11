@@ -1,0 +1,89 @@
+/* 
+  Style rules for the main container element with the class .footer.
+  Sets width to 100%, adds padding, background color, and flex properties.
+  Utilizes flex-wrap and gap to handle responsiveness and spacing.
+  Overflow is set to 'hidden' to manage content overflow.
+*/
+.footer {
+  width: 100%;
+  padding: 20px 40px;
+  background: var(--color-white);
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow: hidden;
+}
+
+/* 
+  Styling for the logo within the .footer section.
+  Sets font properties, text color, and cursor styling.
+*/
+.footer__logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: var(--playfair-display);
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/* 
+  Styling for a span within the .footer__logo.
+  Sets a different text color for the span.
+*/
+.footer__logo span {
+  color: var(--primary-color);
+}
+
+/* 
+  Styling for unordered lists within the .footer section.
+  Sets list style to none and flex properties for the child elements.
+*/
+.footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 64px;
+}
+
+/* 
+  Styling for the last child in the unordered lists within the .footer section.
+  Adjusts the gap for the last child.
+*/
+.footer ul:last-child {
+  gap: 32px;
+}
+
+/* 
+  Styling for list items within the .footer__nav.
+  Sets font properties, text color, and cursor styling.
+*/
+.footer__nav li {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/* 
+  Styling for list items within the .footer__social.
+  Sets width, height, background color, and border-radius.
+*/
+.footer__social li {
+  width: 42px;
+  height: 42px;
+  background-color: var(--secondary-color);
+  border-radius: 100%;
+}
+
+/* 
+  Styling for images within list items in the .footer__social.
+  Sets width, height, object-fit, and contain properties.
+*/
+.footer__social li img {
+  width: 45%;
+  height: 45%;
+  object-fit: contain;
+}

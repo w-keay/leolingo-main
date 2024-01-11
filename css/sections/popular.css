@@ -1,0 +1,270 @@
+/* 
+  Style rules for the popular section.
+  Utilizes flex display, padding, background color, and image.
+*/
+.popular-leo {
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  background-image: url("../../assets/popular_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+
+/* 
+  Styling for the title within .popular-leo.
+  Sets font properties, text color, and alignment.
+*/
+.popular-leo__title {
+  font-size: 56px;
+  font-family: var(--playfair-display);
+  font-weight: 600;
+  line-height: 78px;
+  color: #fff;
+  text-align: center;
+}
+
+/* 
+  Styling for the filters container within .popular-leo.
+  Sets margin, max width, overflow-x, flex properties, justification, and gap.
+*/
+.popular-leo__filters {
+  margin-top: 48px;
+  max-width: 100%;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* 
+  Styling for the filter buttons within .popular-leo__filters.
+  Sets padding, flex properties, gap, background, border, border-radius, font properties, text color, and cursor.
+*/
+.popular-leo__filter-btn {
+  padding: 10px 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 46px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  font-family: var(--plus-jakarta-sans);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* 
+  Styling for the filter button images within .popular-leo__filter-btn.
+  Sets width, height, and object-fit properties.
+*/
+.popular-leo__filter-btn img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+/* 
+  Styling for the active filter button within .popular-leo__filter-btn.
+  Sets background and text color.
+*/
+.popular-leo__filter-btn.active,
+.popular-leo__filter-btn:hover {
+  background: #fff;
+  color: var(--primary-color);
+}
+
+/* 
+  Styling for the catalogue container within .popular-leo.
+  Sets margin, flex properties, justification, alignment, and gap.
+*/
+.popular-leo__catalogue {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+
+/* 
+  Styling for the button within .popular-leo.
+  Sets width, padding, margin, font properties, text color, background, border-radius, and cursor.
+*/
+.popular-leo__button {
+  width: fit-content;
+  padding: 20px 30px;
+  margin: 80px auto 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  font-family: var(--plus-jakarta-sans);
+  color: #fff;
+  border: none;
+  outline: none;
+  background: var(--secondary-color);
+  border-radius: 64px;
+  cursor: pointer;
+}
+
+/* 
+  Styling for the button image within .popular-leo__button.
+  Sets width, height, and object-fit properties.
+*/
+.popular-leo__button img {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+/* 
+  Styling for the card container within .popular-leo.
+  Sets padding, minimum width, height, flex properties, alignment, direction, border-radius, background, and border.
+*/
+.popular-leo__card {
+  padding: 38px;
+  min-width: 260px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 36px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 
+  Styling for the card image within .popular-leo__card.
+  Sets width, height, and object-fit properties.
+*/
+.popular-leo__card-image {
+  width: 110px;
+  height: 84px;
+  object-fit: contain;
+}
+
+/* 
+  Styling for the card title within .popular-leo__card.
+  Sets margin, font properties, text color, and alignment.
+*/
+.popular-leo__card-title {
+  margin-top: 47px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: var(--playfair-display);
+  color: #fff;
+  text-align: center;
+}
+
+/* 
+  Styling for the card details container within .popular-leo__card.
+  Sets width and margin-top properties.
+*/
+.popular-leo__card-details {
+  width: 100%;
+  margin-top: 32px;
+}
+
+/* 
+  Styling for the card rating container within .popular-leo__card-rating.
+  Sets flex properties, alignment, and gap.
+*/
+.popular-leo__card-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 
+  Styling for the rating image within .popular-leo__card-rating.
+  Sets width, height, and object-fit properties.
+*/
+.popular-leo__card-rating img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* 
+  Styling for the rating paragraph within .popular-leo__card-rating.
+  Sets font size, weight, font family, text color.
+*/
+.popular-leo__card-rating p {
+  font-size: 20px; 
+  font-weight: 300;
+  font-family: var(--plus-jakarta-sans);
+  color: #fff;
+}
+
+/* 
+  Styling for the card price paragraph within .popular-leo__card-price.
+  Sets font size, weight, font family, and text color.
+*/
+.popular-leo__card-price {
+  font-size: 20px; 
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  color: #fff;
+}
+
+/* 
+  Styling for the active card within .popular-leo__card.
+  Sets background color, minimum width, and adjusts specific elements within the active card.
+*/
+.popular-leo__card.active-card {
+  background: #fff;
+  min-width: 340px;
+}
+
+/* 
+  Styling for the active card image within .popular-leo__card.
+  Sets width and height properties.
+*/
+.popular-leo__card.active-card .popular-leo__card-image {
+  width: 214px;
+  height: 160px;
+}
+
+/* 
+  Styling for the active card title within .popular-leo__card.
+  Sets text color, font size.
+*/
+.popular-leo__card.active-card .popular-leo__card-title {
+  color: var(--black-500);
+  font-size: 32px;
+}
+
+/* 
+  Styling for the active card rating image within .popular-leo__card-rating.
+  Sets width and height properties.
+*/
+.popular-leo__card.active-card .popular-leo__card-rating img {
+  width: 32px;
+  height: 32px;
+}
+
+/* 
+  Styling for the active card rating paragraph within .popular-leo__card-rating.
+  Sets font size and color properties.
+*/
+.popular-leo__card.active-card .popular-leo__card-rating p {
+  font-size: 24px;
+  color: var(--gray-100);
+}
+
+/* 
+  Styling for the active card price paragraph within .popular-leo__card-price.
+  Sets font size and color properties.
+*/
+.popular-leo__card.active-card .popular-leo__card-price {
+  font-size: 24px;
+  color: var(--secondary-color);
+}

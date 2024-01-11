@@ -1,0 +1,111 @@
+/* 
+  Style rules for the main container element with the class .about-us.
+  This container utilizes flex display and sets a minimum height of 720px.
+  The overflow property is set to 'hidden' to handle content overflow.
+*/
+.about-us {
+  display: flex;
+  min-height: 720px;
+  overflow: hidden;
+}
+
+/* 
+  Style rules for the image container within the .about-us section.
+  Utilizes flex display, with a flex ratio of 1, and a column layout.
+  Background color is set to var(--color-white), and relative positioning.
+*/
+.about-us__image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--color-white);
+  position: relative;
+}
+
+/* 
+  Styling for the inner div element within .about-us__image.
+  Adds padding, flex properties, and background image settings.
+*/
+.about-us__image div {
+  padding: 32px 64px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* 
+  Styling for .about-us__image-leo3, includes a border-bottom and background image.
+*/
+.about-us__image-leo3 {
+  border-bottom: 8px solid var(--color-creamson);
+  background-image: url("../../assets/about_bg1.png");
+}
+
+/* 
+  Styling for .about-us__image-leo2, includes a background image.
+*/
+.about-us__image-leo2 {
+  background-image: url("../../assets/about_bg2.png");
+}
+
+/* 
+  Styling for the image inside .about-us__image-leo3, sets width and height.
+*/
+.about-us__image-leo3 img {
+  width: 225px;
+  height: 200px;
+}
+
+/* 
+  Styling for the image inside .about-us__image-leo2, sets width and height.
+*/
+.about-us__image-leo2 img {
+  width: 240px;
+  height: 160px;
+}
+
+/* 
+  Styling for the button element with the class .about-us__button.
+  Positioned to the right with padding, background color, and border-radius.
+  Text and cursor styling are also included.
+*/
+.about-us__button {
+  position: absolute;
+  right: 0;
+  padding: 12px 32px;
+  min-height: 64px;
+  background: var(--secondary-color);
+  border-radius: 32px 0 0 32px;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-family: var(--plus-jakarta-sans);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  cursor: pointer;
+}
+
+/* 
+  Styling for the image inside .about-us__button, with object-fit and margin settings.
+*/
+.about-us__button img {
+  object-fit: contain;
+  margin-left: 32px;
+}
+
+/* 
+  Styling for the content container within the .about-us section.
+  Adds padding, flex properties, and a column layout with centered content.
+*/
+.about-us__content {
+  padding: 64px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

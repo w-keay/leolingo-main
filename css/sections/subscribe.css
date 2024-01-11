@@ -1,0 +1,98 @@
+/* 
+  Style rules for the subscription section.
+  Utilizes padding, background color, image, flex direction, and overflow properties.
+*/
+.subscription {
+  padding: 64px;
+  background-color: var(--primary-color);
+  background-image: url('../../assets/subscribe_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* 
+  Styling for the title within .subscription.
+  Sets font size, font family, font weight, line height, text color, and alignment.
+*/
+.subscription h2 {
+  font-size: 88px;
+  font-family: var(--playfair-display);
+  font-weight: 600;
+  line-height: 123px;
+  color: #fff;
+  text-align: center;
+}
+
+/* 
+  Styling for the paragraph within .subscription.
+  Sets font size, font family, font weight, line height, margin top, text color, and opacity.
+*/
+.subscription p {
+  font-size: 18px;
+  font-family: var(--plus-jakarta-sans);
+  font-weight: 300;
+  line-height: 36px;
+  margin-top: 32px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* 
+  Styling for the form container within .subscription.
+  Sets min width, margin top, padding, display, gap, border, and border-radius properties.
+*/
+.subscription__form {
+  min-width: 480px;
+  margin-top: 40px;
+  padding: 14px 14px 14px 24px;
+  display: flex;
+  gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 46px;
+}
+
+/* 
+  Styling for the input within .subscription__form.
+  Sets flex, font size, font weight, font family, text color, opacity, background, border, outline, and placeholder color properties.
+*/
+.subscription__form input {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 400px;
+  font-family: var(--plus-jakarta-sans);
+  color: #fff;
+  opacity: 0.5;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/* 
+  Styling for the input placeholder within .subscription__form.
+  Sets color and opacity properties.
+*/
+.subscription__form input::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+/* 
+  Styling for the button within .subscription__form.
+  Sets padding, min width, font size, font weight, font family, text color, text alignment, background, border-radius, border, outline, and cursor properties.
+*/
+.subscription__form button {
+  padding: 20px;
+  min-width: 180px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  color: #fff;
+  text-align: center;
+  background: var(--black-400);
+  border-radius: 46px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

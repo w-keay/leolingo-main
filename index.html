@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Declaration of document type and language -->
+    <meta charset="UTF-8">
+    <!-- Character set for encoding -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Compatibility mode for Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsive viewport settings for better mobile display -->
+    <link rel="icon" type="image/png" href="/leo.png" />
+    <!-- Favicon for the website -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Linking external stylesheet for general styling -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Linking external stylesheet for AOS (Animate On Scroll) library -->
+    <title>LeoLingo</title>
+    <!-- Title of the webpage -->
+  </head>
+  <body>
+    <header>
+      <nav class="header__nav">
+        <!-- Navigation section in the header -->
+
+        <!-- Logo section with animation on scroll -->
+        <div class="header__logo">
+          <h4 data-aos="fade-down">LeoLingo</h4>
+          <!-- Heading with AOS fade-down animation -->
+          <div class="header__logo-overlay"></div>
+          <!-- Overlay for the logo -->
+        </div>
+
+        <!-- Menu items with fade-down animation -->
+        <ul class="header__menu" data-aos="fade-down">
+          <li>
+            <a href="#menu">What's Poppin</a>
+          </li>
+          <li>
+            <a href="#game">A Game?</a>
+          </li>
+          <li>
+            <a href="#updates">Updates</a>
+          </li>
+          <li>
+            <a href="#about-us">About Us</a>
+          </li>
+          <li>
+            <img src="assets/search.svg" alt="search" />
+            <!-- Search icon for the menu -->
+          </li>
+        </ul>
+
+        <!-- Mobile menu icon with fade-down animation -->
+        <ul class="header__menu-mobile" data-aos="fade-down">
+          <li>
+            <img src="assets/menu.svg" alt="menu" />
+            <!-- Menu icon for mobile view -->
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <!-- Hero section for showcasing the main content of the webpage -->
+    
+      <div class="hero-image">
+        <!-- Container for the hero image and related content -->
+        <img 
+          src="assets/LeoLogo.png"
+          alt="logo"
+          data-aos="fade-up"
+        />
+        <!-- Image of logo with AOS fade-up animation -->
+        <h2 data-aos="fade-up">
+          日 <br />
+          本 <br />
+          食
+        </h2>
+        <!-- Heading with Japanese characters and AOS fade-up animation -->
+    
+        <div class="hero-image__overlay"></div>
+        <!-- Overlay for the hero image -->
+      </div>
+    
+      <div class="hero-content">
+        <!-- Container for the hero content -->
+    
+        <div class="hero-content-info" data-aos="fade-left">
+          <!-- Information section with AOS fade-left animation -->
+          <h1>Feel The power Of Language</h1>
+          <!-- Main heading of the hero section -->
+          <p>Begin your journey to communicate in ways you never have.</p>
+          <!-- Subheading providing additional information -->
+    
+          <div class="hero-content__buttons">
+            <!-- Container for action buttons within the hero section -->
+            <button class="hero-content__order-button">Join Now</button>
+            <!-- Button for initiating the joining process -->
+            <button class="hero-content__play-button">
+              <img src="assets/play-circle.svg" alt="play" />
+              <!-- Play icon for the button -->
+              How to Join
+            </button>
+            <!-- Button providing information on how to join -->
+          </div>
+        </div>
+    
+        <div class="hero-content__testimonial" data-aos="fade-up">
+          <!-- Testimonial section with AOS fade-up animation -->
+          <div class="hero-content__customer flex-center">
+            <!-- Container for customer information -->
+            <h4>7<span>k+</span></h4>
+            <!-- Number of happy learners -->
+            <p>Happy Learners</p>
+          </div>
+    
+          <div class="hero-content__review">
+            <!-- Container for customer review -->
+            <img src="assets/user.png" alt="user" />
+            <!-- User icon for the review -->
+            <p>"This is the most accessible language learning service that ever existed."</p>
+            <!-- Actual customer review -->
+          </div>
+        </div>
+      </div>
+    </section>    
+
+    <!-- About Us Section -->
+<section class="about-us" id="about-us">
+  <!-- Container for the About Us section -->
+
+  <div class="about-us__image">
+    <!-- Container for the images and button on the left side -->
+    <div class="about-us__image-leo3">
+      <!-- Container for the first china image with AOS fade-right animation -->
+      <img src="assets/china3.png" alt="china3" data-aos="fade-right" />
+    </div>
+
+    <button class="about-us__button">
+      <!-- Button for learning more with an arrow icon -->
+      Learn More
+      <img src="assets/arrow-up-right.svg" alt="learn more" />
+    </button>
+
+    <div class="about-us__image-leo2">
+      <!-- Container for the first japan image with AOS fade-right animation -->
+      <img src="assets/japan1.png" alt="japan1"  data-aos="fade-right" />
+    </div>
+  </div>
+
+  <div class="about-us__content"  data-aos="fade-left">
+    <!-- Container for the content on the right side with AOS fade-left animation -->
+    <p class="leo__subtitle">About Us / 私たちに関しては</p>
+    <!-- Subtitle providing additional context -->
+    <h3 class="leo__title">Our Mission Is To Gameify Language Learning.</h3>
+    <!-- Main title conveying the mission of the organization -->
+    <p class="leo__description">LeoLingo makes language learning nearly as addictive as your favourite video game.
+    </p>
+    <!-- Description elaborating on the mission statement -->
+  </div>
+</section>
+
+
+<!-- Popular Section -->
+<section class="popular-leo" id="menu">
+  <!-- Container for the Popular section -->
+
+  <h2 class="popular-leo__title" data-aos="flip-up">Popular Languages / 人気</h2>
+  <!-- Main title for the Popular Languages section with AOS flip-up animation -->
+
+  <div class="popular-leo__filters leo__hide-scrollbar" data-aos="fade-up">
+    <button class="popular-leo__filter-btn active">All</button>
+    <button class="popular-leo__filter-btn">
+      <img src="/assets/china1.png" alt="china1" />
+      Chinese
+    </button>
+    <button class="popular-leo__filter-btn">
+      <img src="/assets/japan2.png" alt="japan2" />
+      Japanese
+    </button>
+    <button class="popular-leo__filter-btn">
+      <img src="/assets/england.png" alt="england" />
+      English
+    </button>
+    <button class="popular-leo__filter-btn">
+      <img src="/assets/france.png" alt="france" />
+      French
+    </button>
+    <button class="popular-leo__filter-btn">All</button>
+  </div>
+
+  <div class="popular-leo__catalogue" data-aos="fade-up">
+    <!-- Container for the catalogue of popular with AOS fade-up animation -->
+    
+    <!-- Individual card for a language in the catalogue -->
+    <article class="popular-leo__card">
+      <img class="popular-leo__card-image" src="assets/cantonese.png" alt="cantonese" />
+      <!-- Image representing the language -->
+      <h4 class="popular-leo__card-title">Cantonese</h4>
+      <!-- Title of the language -->
+      <div class="popular-leo__card-details flex-between">
+        <!-- Container for additional details of the language card -->
+        <div class="popular-leo__card-rating">
+          <!-- Container for the rating of the language -->
+          <img src="assets/star.svg" alt="star" />
+          <!-- Star icon for rating -->
+          <p>10</p>
+          <!-- Rating value -->
+        </div>
+
+        <p class="popular-leo__card-price">0/125</p>
+        <!-- Displaying language progress (e.g., lessons completed out of total) -->
+      </div>
+    </article>
+
+        <!-- Individual Card 1 in Popular Section -->
+<article class="popular-leo__card active-card">
+  <!-- Container for an individual card representing a language -->
+  <img class="popular-leo__card-image" src="assets/china2.png" alt="china2" />
+  <!-- Image representing the language -->
+  <h4 class="popular-leo__card-title">Chinese</h4>
+  <!-- Title of the language -->
+  
+  <div class="popular-leo__card-details flex-between">
+    <!-- Container for additional details of the language card -->
+    <div class="popular-leo__card-rating">
+      <!-- Container for the rating of the language -->
+      <img src="assets/star.svg" alt="star" />
+      <!-- Star icon for rating -->
+      <p>20</p>
+      <!-- Rating value -->
+    </div>
+    
+    <p class="popular-leo__card-price">0/250</p>
+    <!-- Displaying language progress (e.g., lessons completed out of total) -->
+  </div>
+</article>
+
+
+<!-- Individual Card 2 in Popular Section -->
+<article class="popular-leo__card">
+  <!-- Container for another individual card representing a language -->
+  <img class="popular-leo__card-image" src="assets/mandarin.png" alt="mandarin" />
+  <!-- Image representing the language -->
+  <h4 class="popular-leo__card-title">Mandarin</h4>
+  <!-- Title of the language -->
+
+  <div class="popular-leo__card-details flex-between">
+    <!-- Container for additional details of the language card -->
+    <div class="popular-leo__card-rating">
+      <!-- Container for the rating of the language -->
+      <img src="assets/star.svg" alt="star" />
+      <!-- Star icon for rating -->
+      <p>10</p>
+      <!-- Rating value -->
+    </div>
+
+    <p class="popular-leo__card-price">0/125</p>
+    <!-- Displaying language progress (e.g., lessons completed out of total) -->
+  </div>
+</article>
+
+
+<!-- Button for Beginning the Language Learning Journey -->
+<div class="popular-leo__button-container">
+  <!-- Container for the button at the end of the Popular section -->
+  <button class="popular-leo__button">
+    <!-- Button for initiating the language learning journey -->
+    Begin Your Journey
+    <img src="assets/arrow-right.svg"  alt="arrow-right" />
+    <!-- Arrow icon indicating the direction of the journey -->
+  </button>
+</section>
+
+
+    <!-- Trending Section -->
+<section class="trending" id="leo">
+  <!-- Container for the Trending section -->
+
+  <!-- Trending Subsection -->
+  <section class="trending-leo">
+    <!-- Container for the Trending subsection -->
+
+    <div class="trending__content" data-aos="fade-right">
+      <!-- Container for the content within the Trending subsection with AOS fade-right animation -->
+      <p class="leo__subtitle">How You Learn / トレンド</p>
+      <!-- Subtitle providing additional context in both English and Japanese -->
+
+      <h3 class="leo__title">Game Level System</h3>
+      <!-- Main title of the Trending  subsection -->
+      <p class="leo__description">Get addicted to learning.</p>
+      <!-- Description encouraging engagement with the learning process -->
+
+      <ul class="trending__list flex-between">
+        <!-- Unordered list for showcasing trending features with a flex layout -->
+        <li>
+          <!-- List item with a check icon and description -->
+          <div class="trending__icon flex-center">
+            <!-- Container for the check icon -->
+            <img src="assets/check.svg" alt="check" />
+            <!-- Check icon indicating completion or achievement -->
+          </div>
+          <p>Unlock Flow State</p>
+          <!-- Description of the first trending feature -->
+        </li>
+        <!-- Similar list items for other trending features -->
+        <li>
+          <div class="trending__icon flex-center">
+            <img src="assets/check.svg" alt="check" />
+          </div>
+          <p>Freemium Model</p>
+        </li>
+        <li>
+          <div class="trending__icon flex-center">
+            <img src="assets/check.svg" alt="check" />
+          </div>
+          <p>Incremental Progress</p>
+        </li>
+        <li>
+          <div class="trending__icon flex-center">
+            <img src="assets/check.svg" alt="check" />
+          </div>
+          <p>AI Tailored Learning</p>
+        </li>
+        <li>
+          <div class="trending__icon flex-center">
+            <img src="assets/check.svg" alt="check" />
+          </div>
+          <p>Accountability Streaks</p>
+        </li>
+        <li>
+          <div class="trending__icon flex-center">
+            <img src="assets/check.svg" alt="check" />
+          </div>
+          <p>Unlock Earnable Items</p>
+        </li>
+      </ul>
+    </div>
+  
+        <div class="trending__image flex-center">
+          <img src="assets/character1.gif" alt="character1" data-aos="fade-left" />
+  
+          <div class="trending__arrow trending__arrow-left">
+            <img src="assets/arrow-vertical.svg" alt="arrow vertical" />
+          </div>
+  
+          <div class="trending__arrow trending__arrow-bottom">
+            <img src="assets/arrow-horizontal.svg" alt="arrow horizontal" />
+          </div>
+        </div>
+
+      </section>
+
+      <div class="trending__discover" data-aos="zoom-in">
+        <p>Game On</p>
+      </div>
+
+      <section class="trending-leo">
+        <div class="trending__image flex-center">
+          <img src="assets/character2.gif" alt="character2" data-aos="fade-right" />
+  
+          <div class="trending__arrow trending__arrow-top">
+            <img src="assets/arrow-horizontal.svg" alt="arrow horizontal" />
+          </div>
+  
+          <div class="trending__arrow trending__arrow-right">
+            <img src="assets/arrow-vertical.svg" alt="arrow vertical" />
+          </div>
+        </div>
+
+        <div class="trending__content" data-aos="fade-left">
+          <p class="leo__subtitle">The Science / トレンド</p>
+  
+          <h3 class="leo__title">Learning Backed By Science
+          </h3>
+          <p class="leo__description">We utilise learning techniques to speed up your progress.
+          </p>
+  
+          <ul class="trending__list flex-between">
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>The Feynman Technique</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>
+                Spaced Repitition</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Retrieval Practice</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Leitner System</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Pomodoro Technique</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Dual Coding</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <!-- Subscription Section -->
+<section class="subscription flex-center" id="updates">
+  <!-- Container for the Subscription section with a flex-center layout -->
+
+  <h2 data-aos="flip-down">
+    <!-- Main title with AOS flip-down animation -->
+    Get updates straight <br />
+    to your inbox
+  </h2>
+  <!-- Subheading encouraging users to subscribe -->
+
+  <p data-aos="fade-up">Sign up for the LeoLingo newsletter</p>
+  <!-- Additional text prompting users to sign up for the newsletter -->
+
+  <div class="subscription__form" data-aos="fade-up">
+    <!-- Container for the subscription form with AOS fade-up animation -->
+    <input type="text" placeholder="Enter your email address"/>
+    <!-- Input field for entering the email address -->
+    <button>Get Started</button>
+    <!-- Button for initiating the subscription process -->
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="footer flex-between">
+  <!-- Container for the Footer section with a flex-between layout -->
+
+  <h3 class="footer__logo">
+    <!-- Logo with spanned text for styling -->
+    <span>Leo</span>Lingo
+  </h3>
+
+  <ul class="footer__nav">
+    <!-- Container for the navigation links in the footer -->
+    <li><a href="#menu">What's Poppin</a></li>
+    <!-- Navigation link to the "What's Poppin" section -->
+    <li><a href="#game">A Game?</a></li>
+    <!-- Navigation link to the "A Game?" section -->
+    <li><a href="#updates">Updates</a></li>
+    <!-- Navigation link to the "Updates" section -->
+    <li><a href="#about-us">About Us</a></li>
+    <!-- Navigation link to the "About Us" section -->
+  </ul>
+
+  <ul class="footer__social">
+    <!-- Container for social media icons in the footer -->
+    <li class="flex-center">
+      <!-- Container for the Facebook icon with a flex-center layout -->
+      <img src="assets/facebook.svg" alt="facebook" />
+    </li>
+    <!-- Similar containers for the Instagram and Twitter icons -->
+    <li class="flex-center">
+      <img src="assets/instagram.svg" alt="instagram" />
+    </li>
+    <li class="flex-center">
+      <img src="assets/twitter.svg" alt="twitter" />
+    </li>
+  </ul>
+</footer>
+
+
+<!-- Script Section -->
+<script src="js/script.js" type="module"></script>
+<!-- Script tag linking the external JavaScript file "script.js" with the type "module" -->
+</body>
+</html>
