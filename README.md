@@ -1,5 +1,5 @@
-# YOUR PROJECT TITLE
-#### Video Demo:  <URL HERE>
-#### Description:
-LeoLingo is a landing page for a language learning application. It uses HTML, CSS and JS to make an aesthetically pleasing landing page.
-Animations and gifs were also important in the implementation to make the website sleek.
+LeoLingo
+Video Demo: https://youtu.be/inRqEXKxDWM
+Description:
+LeoLingo is a landing page for a gameified language learning application. It uses HTML, CSS and JS.
+Reloading animations and gifs are probably the star features of this website :)
